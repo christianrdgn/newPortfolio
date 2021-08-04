@@ -22,6 +22,11 @@ body, html {
 #sobre {
     background-image: url(./marioFire.jpg);
 }
+#menu-flutuante {
+    position: fixed;
+    right: 0;
+    top: 50%;
+}
 #header {
     display: flex;
     flex-direction: row;
