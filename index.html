@@ -1,61 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
     <div id="home" class="container">
-        <div id="header">
-            <div id="menu-nome">
-                <h1>Christian Rodrigues Gonçalves</h1>                    
+        <div id="header" class="row">
+            <div id="menu-nome" class="col-m-12 col-4">
+                <h1>Christian Rodrigues Gonçalves</h1>
                 <p>Desenvolvedor Front-End ReactJs</p>
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-            </ul>
+            <nav class="col-m-12 col-8">
+                <a href="#home">Home</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
         </div>
-        <div id="info">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iure odio similique, sapiente, est eligendi sed fuga autem laudantium reprehenderit reiciendis hic. Dignissimos hic, tenetur quas expedita numquam velit suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nulla sequi quae, hic magnam, temporibus, accusamus illo voluptatum tempore eum id iusto sed nostrum autem reprehenderit aliquam numquam praesentium quos!</p>
+        <div id="info" class="row">
+            <div class="info-content">
+                <div class="info-img">
+                    <div class="ajuste-img">
+                        
+                    </div>
+                </div>
+                <div class="sobre">
+                    <div>
+                        <h1>Olá, sou o Christian.</h1>
+                        <p>
+                            Tenho 26 anos, sou gaúcho do RS, moro em Curitiba/PR. Novato na area do desenvolvimento, sempre querendo aprender mais. 
+                        </p>
+                        <h3>Minhas competências:</h3>
+                        <p>
+                            Fiz alguns cursos de desenvolvimento web por escola profissionalizante e pela internet. Nestes cursos aprendi html, css, javascript e react.
+                        </p>
+                        <p>
+                            Fiz curso de python e django, embora não tenha praticado mais, pois agora estou focado no front-end, mas pretendo voltar a praticá-lo um dia, pois a base já tenho.                            
+                        </p>
+                        <p>
+                            Sou dedicado, não tenho medo de assumir responsabilidades, vou atrás da resposta, mas não tenho medo de perguntar caso não a encontre.
+                        </p>
+                        <small>
+                            Desde de Setembro de 2020 sem programar, voltei a estudar online em Julho 2021 e retornei a faculdade. Estou aprimorando alguns projetos antigos, principalmente os em react utilizando o hooks.
+                        </small>
+                        <small>
+                            Para praticar e tirar a ferrugem dos dedos, resolvi fazer este novo portfólio.
+                        </small>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div id="menu-flutuante">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-        </ul>
     </div>
     <div class="continue">
-        <h1>Continue rolando (seta para baixo)</h1>
+        <h1>Projetos</h1>
     </div>
     <div id="projetos" class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis veritatis impedit. Veniam delectus adipisci commodi eum, at labore et nemo odio esse corrupti magni. Dolorum fugit iure beatae in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et amet eaque pariatur, qui a repellendus facere unde ipsum laudantium eos numquam molestiae. Facilis saepe voluptas vel nisi non laborum mollitia? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, tempore? Tempore doloremque doloribus beatae nisi laboriosam ipsam quo voluptate, voluptates iure unde voluptatum, commodi, aliquid deleniti nobis nesciunt qui temporibus.</p>
-    </div>
-    <div id="menu-flutuante">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-        </ul>
+        <div class="mostrar">
+            <iframe src="./instrucao.html" name="show-box" title="box-iframe"></iframe>
+        </div>
+        <div class="selecionar">
+            <div class="carousel">
+                <div>
+                    <a href="https://portifolio-kappa-orpin.vercel.app/trabalhos.html" target="show-box">
+                        <img src="./imagens/portfolio.png" alt="Primeiro portfólio" />
+                        <small>Primeiro portfólio</small>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://projeto-noticia-cidade.vercel.app/index.html" target="show-box">
+                        <img src="./imagens/noticia-cidade.png" alt="Notícia cidade" />
+                        <small>Notícia Cidade</small>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://projeto-chale-hotel-html-css.vercel.app/" target="show-box">
+                        <img src="./imagens/chale-hotel.png" alt="python" />
+                        <small>Chalé Hotel</small>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://efeito-parallax-html-css.vercel.app/" target="show-box">
+                        <img src="./imagens/parallax.png" alt="parallax" />
+                        <small>Efeito Parallax</small>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://to-do-list-react-ashy.vercel.app/" target="show-box">
+                        <img src="./imagens/ToDoList.png" alt="lista de tarefas" />
+                        <small>Lista de tarefas - React</small>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://react-movies-react.vercel.app/" target="show-box">
+                        <img src="./imagens/react-movies.png" alt="react movies" />
+                        <small>React Movies</small>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="continue">
-        <h1>Continue rolando (seta para baixo)</h1>
+        <h1>Contato</h1>
     </div>
-    <div id="sobre" class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis veritatis impedit. Veniam delectus adipisci commodi eum, at labore et nemo odio esse corrupti magni. Dolorum fugit iure beatae in. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et amet eaque pariatur, qui a repellendus facere unde ipsum laudantium eos numquam molestiae. Facilis saepe voluptas vel nisi non laborum mollitia? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, tempore? Tempore doloremque doloribus beatae nisi laboriosam ipsam quo voluptate, voluptates iure unde voluptatum, commodi, aliquid deleniti nobis nesciunt qui temporibus.</p>
+    <div id="contato" class="container">
+        <div class="cont-list">
+            <ul>
+                <li class="borda-baixo email">
+                    <a href="mailto:christian.rdgn1@gmail.com" target="_blank">
+                        christian.rdgn1@gmail.com</a>
+                </li>
+                <li class="borda-baixo whatsapp">
+                    <a href="https://wa.me/5541997598474" target="_blank">
+                        +55 41 99759-8474</a>
+                </li>
+                <li class="borda-baixo github">
+                    <a href="https://github.com/christianrdgn" target="_blank">christianrdgn</a>
+                </li>
+                <li class="borda-baixo linkedin">
+                    <a href="https://www.linkedin.com/in/christian-rodrigues-gonçalves-025bba14b/"
+                        target="_blank">Christian Rodrigues Gonçalves</a>
+                </li>
+                <li class="maps">
+                    <a href="https://goo.gl/maps/KLHwLkEeBAARBGtd9" target="_blank">Curitiba, Paraná, Brasil</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     </div>
     <div id="menu-flutuante">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-        </ul>
+        <input type="checkbox" name="checkbox" id="check">
+        <label id="icone" for="check"><img src="./imagens/seta.png" alt="seta"></label>
+        <div class="barra">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <label id="close" for="check"><img src="./imagens/close.png" alt="fechar"></label>
+        </div>
     </div>
+
+
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate-3.3.2.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+
+    <script type="text/javascript" src="./js/carousel.js"></script>
 </body>
+
 </html>

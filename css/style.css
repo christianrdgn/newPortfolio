@@ -1,0 +1,293 @@
+/*Formatação para o efeito Parallax*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    
+}
+body {
+    background-color: rgba(211, 211, 211, 0.5);
+}
+.container {
+    position: relative;
+    height: 100vh;
+    background: url(../imagens/parede-tijolos.jpg) left top;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+/*Header*/
+#header {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: 20%;
+    max-height: 20%;
+    background-color: rgba(211, 211, 211, 0.8);
+}
+#menu-nome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40%;
+    min-height: 100%;
+    border-left: 5px solid gray;
+    padding-left: 10px;
+}
+#menu-nome h1, #menu-nome p {
+    margin-bottom: 10px;
+    text-shadow: 2px 2px white;
+}
+#header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%; 
+    max-height: 100%;
+}
+#header nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 90px;
+    height: 100%;
+    border-left: 2px solid white;
+    background-color: rgba(211, 211, 211, 0.9);
+}
+#header nav a:hover {
+    border-left: 2px solid gray;
+    border-radius: 50px 0 0 50px;
+    color: white;
+}
+#header nav a {
+    text-decoration: none;
+    color: black;
+}
+/*Formatação do Menu Flutuante*/
+#menu-flutuante {
+    position: fixed;
+    right: 0;
+    top: 45%;
+}
+#check {
+    display: none;
+}
+#check:checked ~ .barra {
+    transform: translateX(-300px);
+}
+#check:checked ~ #icone img {
+    transform: translateX(300px);
+}
+#icone {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+.barra {
+    position: absolute;
+    transition: all .2s linear;
+    right: -300px;
+    z-index: 2;
+}
+#close { 
+    float: right;
+    clear: both;
+    cursor: pointer;
+}
+#menu-flutuante nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#menu-flutuante nav a {
+    color: black;
+    padding: 15px;
+    background-color: lightgray;
+    text-decoration: none;
+    border-left: 2px solid white;
+}
+#menu-flutuante nav a:hover {
+    border-radius: 15px 0 0 15px;
+    border-left: 2px solid black;
+    color: white;
+}
+/*Parte onde está minha foto e links de contato*/
+#info {
+    position: relative;
+    height: 80%;
+    max-width: 100%;
+    text-align: justify;
+}
+.info-content{
+    display: flex;
+    flex-direction: row;
+}
+/*Formatação da foto*/
+.info-img{
+    display: flex;
+    width: 50%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.ajuste-img {
+    width: 60%;
+    height: 80%;
+    overflow: hidden;
+    border: 2px solid gray;
+    border-radius: 50px 120px;
+    box-shadow: -5px 5px 10px 10px #888888;
+    background: url(../imagens/foto-perfil.jpg) center no-repeat;
+    background-size: cover;
+}
+/*Sobre*/
+.sobre {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 80vh;   
+}
+.sobre div {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(211, 211, 211, 0.8);
+    border-radius: 120px 50px;
+    box-shadow: -5px 5px 10px 10px #888888;
+    word-wrap: break-word;
+}
+.sobre h1 {
+    text-align: center;
+    padding-top: 40px;
+    border-bottom: 2px solid gray;
+}
+.sobre p {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sobre h3 {
+    padding-top: 20px;
+}
+.sobre small {
+    padding: 30px 10px 0px 10px;
+}
+
+/*Formatação pagina projetos*/
+#projetos {
+    display: flex;
+    flex-direction: column;
+}
+.mostrar {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mostrar iframe {
+    width: 90%;
+    height: 90%;
+}
+.selecionar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    background-color: rgba(211, 211, 211, 0.8);
+}
+.carousel {
+    width: 60vw;
+    padding: 0 auto;
+}
+.carousel div {
+    margin-left: 10px;
+}
+.carousel img {
+    max-width: 100%;
+    height: auto;
+}
+.carousel a {
+    text-decoration: none;
+    color: black;
+}
+.carousel small {
+    border-left: 2px solid white;
+    padding-left: 2px;
+}
+/*lista com links*/
+#contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.cont-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80vh;
+}
+.cont-list ul {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 120px 50px;
+    box-shadow: -5px 5px 10px 10px #888888;
+    overflow: hidden;
+}
+.cont-list ul li{
+    display: flex;
+    height: 100%;
+    list-style: none;
+    background-color: rgba(211, 211, 211, 0.8);
+    cursor: pointer;
+}
+.cont-list ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+.cont-list ul li a {
+    opacity: 0;
+}
+.cont-list ul li a:hover {
+    opacity: 1;
+}
+.email {
+    background: url(../imagens/email.png) center no-repeat;
+}
+.whatsapp {
+    background: url(../imagens/whatsapp.png) center no-repeat;
+}
+.github {
+    background: url(../imagens/github.png) center no-repeat;
+}
+.linkedin {
+    background: url(../imagens/linkedin.png) center no-repeat;
+}
+.maps {
+    background: url(../imagens/maps.png) center no-repeat;
+}
+.cont-list ul li:hover {
+    background: rgba(211, 211, 211, 0.8);
+}
+.borda-baixo {
+    border-bottom: 2px solid gray;
+
+}
+.continue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px auto;
+}
