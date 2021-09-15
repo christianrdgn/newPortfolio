@@ -112,6 +112,10 @@ body {
     border-left: 2px solid black;
     color: white;
 }
+#menu-flutuante img:hover {
+    background-color: rgba(211, 211, 211, 0.8);
+    border-radius: 50px;
+}
 /*Parte onde está minha foto e links de contato*/
 #info {
     position: relative;
