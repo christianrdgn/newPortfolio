@@ -189,6 +189,7 @@ body, html {
     align-items: center;
     width: 50%;
     height: 80vh;
+    min-height: 480px; 
 }
 .cont-list ul {
     width: 60%;
