@@ -3,14 +3,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box !important;
-    
 }
-body {
+body, html {
+    height: 100%;
     background-color: rgba(211, 211, 211, 0.5);
+    min-height: 600px;
+    min-width: 1024px;
 }
 .container {
     position: relative;
-    height: 100vh;
+    height: 100%;
     background: url(../imagens/parede-tijolos.jpg) left top;
     background-attachment: fixed;
     background-size: 100%;
@@ -63,59 +65,6 @@ body {
     text-decoration: none;
     color: black;
 }
-/*Formatação do Menu Flutuante*/
-#menu-flutuante {
-    position: fixed;
-    right: 0;
-    top: 45%;
-}
-#check {
-    display: none;
-}
-#check:checked ~ .barra {
-    transform: translateX(-300px);
-}
-#check:checked ~ #icone img {
-    transform: translateX(300px);
-}
-#icone {
-    cursor: pointer;
-    position: absolute;
-    z-index: 1;
-    right: 0;
-}
-.barra {
-    position: absolute;
-    transition: all .2s linear;
-    right: -300px;
-    z-index: 2;
-}
-#close { 
-    float: right;
-    clear: both;
-    cursor: pointer;
-}
-#menu-flutuante nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-#menu-flutuante nav a {
-    color: black;
-    padding: 15px;
-    background-color: lightgray;
-    text-decoration: none;
-    border-left: 2px solid white;
-}
-#menu-flutuante nav a:hover {
-    border-radius: 15px 0 0 15px;
-    border-left: 2px solid black;
-    color: white;
-}
-#menu-flutuante img:hover {
-    background-color: rgba(211, 211, 211, 0.8);
-    border-radius: 50px;
-}
 /*Parte onde está minha foto e links de contato*/
 #info {
     position: relative;
@@ -132,6 +81,7 @@ body {
     display: flex;
     width: 50%;
     height: 80vh;
+    min-height: 480px;
     justify-content: center;
     align-items: center;
 }
@@ -150,7 +100,8 @@ body {
     display: flex;
     align-items: center;
     width: 50%;
-    height: 80vh;   
+    height: 80vh;  
+    min-height: 480px; 
 }
 .sobre div {
     width: 60%;
@@ -162,6 +113,8 @@ body {
     border-radius: 120px 50px;
     box-shadow: -5px 5px 10px 10px #888888;
     word-wrap: break-word;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 .sobre h1 {
     text-align: center;
@@ -169,15 +122,17 @@ body {
     border-bottom: 2px solid gray;
 }
 .sobre p {
-    padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
 }
 .sobre h3 {
     padding-top: 20px;
 }
-.sobre small {
-    padding: 30px 10px 0px 10px;
+.pad1 {
+    padding: 10px;
+}
+.pad-baixo {
+    padding: 5px 10px 35px 10px;
 }
 
 /*Formatação pagina projetos*/
@@ -294,4 +249,81 @@ body {
     justify-content: center;
     align-items: center;
     padding: 25px auto;
+}
+/*Formatação do Menu Flutuante*/
+#menu-flutuante {
+    position: fixed;
+    right: 0;
+    top: 45%;
+}
+#check {
+    display: none;
+}
+#check:checked ~ .barra {
+    transform: translateX(-300px);
+}
+#check:checked ~ #icone img {
+    transform: translateX(300px);
+}
+#icone {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+.barra {
+    position: absolute;
+    transition: all .2s linear;
+    right: -300px;
+    z-index: 2;
+}
+#close { 
+    float: right;
+    clear: both;
+    cursor: pointer;
+}
+#menu-flutuante nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#menu-flutuante nav a {
+    color: black;
+    padding: 15px;
+    background-color: lightgray;
+    text-decoration: none;
+    border-left: 2px solid white;
+}
+#menu-flutuante nav a:hover {
+    border-radius: 15px 0 0 15px;
+    border-left: 2px solid black;
+    color: white;
+}
+#menu-flutuante img:hover {
+    background-color: rgba(211, 211, 211, 0.8);
+    border-radius: 50px;
+}
+/*Personalzar Scrollbar*/
+/* Para Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(122, 122, 122, 0.9) white;
+  }
+  
+/* Para Chrome, Edge, e Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+div::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+*::-webkit-scrollbar-track {
+    background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(122, 122, 122, 0.9);
+    border-radius: 20px;
+    border: none;
 }
